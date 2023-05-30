@@ -1,0 +1,15 @@
+const catDog = (str)=> {
+ const count = /cat/g;
+ const dount = /dog/g;
+ const grabC = str.match(count); 
+ const grabD = str.match(dount);
+    
+if((grabC.length == grabD.length )){
+      return true;
+    }
+    return false;
+}
+
+
+}
+module.exports = catDog;

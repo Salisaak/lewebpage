@@ -40,12 +40,16 @@
   }
   .fixed ,.left, .right {
     font-family: 'incise', sans-serif;
-    color: rgb(182, 181, 180);
+    color: rgb(255, 224, 224);
     font-weight: 700;
     width: 100vw;
     top: 50%;
     padding-bottom: 100px;
+    z-index: 5;
     
+  }
+  .yarki{
+    padding-top: 300px;
   }
 .yark{
   padding-top: 75px;
@@ -57,24 +61,30 @@
 }
   .fixed{
     color: rgb(202, 172, 101);
-    position: absolute;
+    position: fixed;
     text-align: center;
     font-size: 100px;
   }
   .right{
     text-align: right;
     font-size: 100px;
+    position: relative;
   }
-
+ 
   .left{
     text-align: left;
     font-size: 100px;
+    position: relative;
   }
  .centerpiece{
   /* align-content: center; */
+  position: fixed;
+  z-index: -1;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 900px;
+  height: 900px;
   /* width: 50%; */
  }
   .parallax {
@@ -86,7 +96,7 @@
   }
   
   .parallax__layer {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -153,4 +163,16 @@
   }
   .starfield span:nth-child(4) {
     transform: rotate(123deg);
+  }
+  .centerpiece ,.imageLeft ,.imageRight{
+    
+    position: relative;
+  }
+  .imageLeft{
+    z-index: 5;
+   padding-right: 200px;
+  }
+  .imageRight{
+    z-index: 5;
+   padding-left:23cm
   }
